@@ -1,0 +1,31 @@
+<settings>
+<servers>
+  <server>
+    <id>proj4-project4-ca</id>
+    <username>aws</username>
+    <password>${env.CODEARTIFACT_AUTH_TOKEN}</password>
+  </server>
+</servers>
+<profiles>
+  <profile>
+    <id>proj4-project4-ca</id>
+    <activation>
+      <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+      <repository>
+        <id>proj4-project4-ca</id>
+        <url>https://proj4-857565654393.d.codeartifact.us-east-1.amazonaws.com/maven/project4-ca/</url>
+      </repository>
+    </repositories>
+  </profile>
+</profiles>
+<mirrors>
+  <mirror>
+    <id>proj4-project4-ca</id>
+    <name>proj4-project4-ca</name>
+    <url>https://proj4-857565654393.d.codeartifact.us-east-1.amazonaws.com/maven/project4-ca/</url>
+    <mirrorOf>*</mirrorOf>
+  </mirror>
+</mirrors>
+</settings>
